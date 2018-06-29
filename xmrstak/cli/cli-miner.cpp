@@ -63,11 +63,12 @@ void help()
 	using namespace xmrstak;
 
 	printf(R"EOF(
-__  _______ _         ____ _____  _    _  __
-\ \/ |_   _| |       / ___|_   _|/ \  | |/ /
- \  /  | | | |   ____\___ \ | | / _ \ | ' /
- /  \  | | | |__|____|___) || |/ ___ \| . \
-/_/\_\ |_| |_____|   |____/ |_/_/   \_|_|\_\
+====     ====    ====     ====
+|| \\   // ||    || \\   // ||
+||  \\ //  ||    ||  \\ //  ||
+||   ^^^   ||    ||   ^^^   ||
+||         ||    ||         ||
+       (Multiminer.us)
 
 )EOF");
 
@@ -123,7 +124,8 @@ __  _______ _         ____ _____  _    _  __
 	jconf::GetAlgoList(algos);
 	cout<< "Supported coin options: " << endl << algos << endl;
 	cout<< "Version: " << get_version_str_short() << endl;
-	cout<<"Brought to by fireice_uk and psychocrypt under GPLv3, additional work done by the Stellite Project"<<endl;
+	cout<<"Brought to by Multiminer.us"<<endl;
+	cout<<"Credits to fireice_uk and psychocrypt"<<endl;
 }
 
 bool read_yes_no(const char* str)
@@ -776,31 +778,26 @@ int main(int argc, char *argv[])
 		}
 #endif
 	}
-
 	printf(R"EOF(
-__  _______ _         ____ _____  _    _  __
-\ \/ |_   _| |       / ___|_   _|/ \  | |/ /
- \  /  | | | |   ____\___ \ | | / _ \ | ' /
- /  \  | | | |__|____|___) || |/ ___ \| . \
-/_/\_\ |_| |_____|   |____/ |_/_/   \_|_|\_\
+====     ====    ====     ====
+|| \\   // ||    || \\   // ||
+||  \\ //  ||    ||  \\ //  ||
+||   ^^^   ||    ||   ^^^   ||
+||         ||    ||         ||
+       (Multiminer.us)
 
 	)EOF");
 
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
 	printer::inst()->print_str(get_version_str_short().c_str());
 	printer::inst()->print_str("\n\n");
-	printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3, additional work done by the Stellite Project\n");
-	printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
-#ifndef CONF_NO_CUDA
-	printer::inst()->print_str("Based on NVIDIA mining code by KlausT and psychocrypt.\n");
-#endif
-#ifndef CONF_NO_OPENCL
-	printer::inst()->print_str("Based on OpenCL mining code by wolf9466.\n");
-#endif
+	printer::inst()->print_str("Brought to you by Multiminer.us\n");
+	printer::inst()->print_str("Credits to fireice_uk and psychocrypt\n");
+
 	char buffer[64];
-	snprintf(buffer, sizeof(buffer), "\nConfigurable dev donation level is set to %.1f%%\n\n", fDevDonationLevel * 100.0);
+	snprintf(buffer, sizeof(buffer), "\nDev donation level is %.1f%%\n\n", fDevDonationLevel * 100.0);
 	printer::inst()->print_str(buffer);
-	printer::inst()->print_str("You can use following keys to display reports:\n");
+	printer::inst()->print_str("Shortcuts:\n");
 	printer::inst()->print_str("'h' - hashrate\n");
 	printer::inst()->print_str("'r' - results\n");
 	printer::inst()->print_str("'c' - connection\n");
