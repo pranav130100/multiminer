@@ -62,16 +62,6 @@ void help()
 	using namespace std;
 	using namespace xmrstak;
 
-	printf(R"EOF(
-====     ====    ====     ====
-|| \\   // ||    || \\   // ||
-||  \\ //  ||    ||  \\ //  ||
-||   ^^^   ||    ||   ^^^   ||
-||         ||    ||         ||
-       (Multiminer.us)
-
-)EOF");
-
 	cout<<"Usage: "<<params::inst().binaryName<<" [OPTION]..."<<endl;
 	cout<<" "<<endl;
 	cout<<"  -h, --help                 show this help"<<endl;
@@ -260,7 +250,7 @@ void do_guided_pool_config()
 		std::cin.clear(); std::cin.ignore(INT_MAX,'\n');
 		stdin_flushed = true;
 
-		std::cout<<"- Password (mostly empty or x):"<<std::endl;
+		std::cout<<"- Password (mostly empty or x or rig name):"<<std::endl;
 		getline(std::cin, passwd);
 	}
 
@@ -785,8 +775,7 @@ int main(int argc, char *argv[])
 ||   ^^^   ||    ||   ^^^   ||
 ||         ||    ||         ||
        (Multiminer.us)
-
-	)EOF");
+)EOF");
 
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
 	printer::inst()->print_str(get_version_str_short().c_str());
@@ -795,7 +784,7 @@ int main(int argc, char *argv[])
 	printer::inst()->print_str("Credits to fireice_uk and psychocrypt\n");
 
 	char buffer[64];
-	snprintf(buffer, sizeof(buffer), "\nDev donation level is %.1f%%\n\n", fDevDonationLevel * 100.0);
+	snprintf(buffer, sizeof(buffer), "\nDonation level is %.1f%%\n\n", fDevDonationLevel * 100.0);
 	printer::inst()->print_str(buffer);
 	printer::inst()->print_str("Shortcuts:\n");
 	printer::inst()->print_str("'h' - hashrate\n");
