@@ -131,7 +131,7 @@ extern const char sHtmlCommonHeader [] =
 	"<body>"
 	"<div class='all'>"
 	"<div class='version'>%s</div>"
-	"<div class='header'>Multiminer</div>"
+	"<div class='header'><a href=""http:\/\/multiminer.us"">MultiMiner</a></div>"
 
 	"<div class='flex-container'>"
 		"<div class='links flex-item'>"
