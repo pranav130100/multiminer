@@ -112,7 +112,7 @@ extern const char sHtmlCssFile [] =
 
 size_t sHtmlCssSize = sizeof(sHtmlCssFile) - 1;
 
-extern const char sHttpAuthRelam[] = "XTL-Stak-Miner";
+extern const char sHttpAuthRelam[] = "MultiMiner";
 extern const char sHttpAuthOpaque[] = "6c071f0df539e234cadbcd79164af7a594e23ab42bccb834df796aead6ce96e4";
 
 extern const char sHtmlAccessDenied[] =
@@ -131,7 +131,7 @@ extern const char sHtmlCommonHeader [] =
 	"<body>"
 	"<div class='all'>"
 	"<div class='version'>%s</div>"
-	"<div class='header'>Multiminer - (Multiminer.us)</div>"
+	"<div class='header'>Multiminer</div>"
 
 	"<div class='flex-container'>"
 		"<div class='links flex-item'>"
