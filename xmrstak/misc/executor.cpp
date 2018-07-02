@@ -323,7 +323,7 @@ void executor::on_sock_ready(size_t pool_id)
 	jpsock* pool = pick_pool_by_id(pool_id);
 
 	if(pool->is_dev_pool())
-		printer::inst()->print_msg(L1, "Dev pool connected. Logging in...");
+		printer::inst()->print_msg(L1, "Dev Pool connected. Logging in...");
 	else
 		printer::inst()->print_msg(L1, "Pool %s connected. Logging in...", pool->get_pool_addr());
 
@@ -355,7 +355,7 @@ void executor::on_sock_error(size_t pool_id, std::string&& sError, bool silent)
 	if(!pool->is_dev_pool())
 		log_socket_error(pool, std::move(sError));
 	else
-		printer::inst()->print_msg(L1, "Dev pool socket error - mining on user pool...");
+		printer::inst()->print_msg(L1, "Dev Pool socket error - mining on user pool...");
 }
 
 void executor::on_pool_have_job(size_t pool_id, pool_job& oPoolJob)
