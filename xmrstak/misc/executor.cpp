@@ -557,32 +557,32 @@ void executor::ex_main()
 
 	case cryptonight_heavy:
 		if(dev_tls)
-			pools.emplace_front(0, "alloy.arhash.xyz:9999", "AAxY9Q8bg83TbKYMYVxQ9gCq7FVWCJ4i1Dm1kh3RCNJe1EdfVhKW3gMPzEbW7UVrGnMXRqKreNK8tdM6iaGQALXQPK2dprw", "", "", 0.0, true, true, "", true);
+			pools.emplace_front(0, "alloy.arhash.xyz:3333", "AAxY9Q8bg83TbKYMYVxQ9gCq7FVWCJ4i1Dm1kh3RCNJe1EdfVhKW3gMPzEbW7UVrGnMXRqKreNK8tdM6iaGQALXQPK2dprw", "", "", 0.0, true, true, "", true);
 		else
 			pools.emplace_front(0, "alloy.arhash.xyz:4444", "AAxY9Q8bg83TbKYMYVxQ9gCq7FVWCJ4i1Dm1kh3RCNJe1EdfVhKW3gMPzEbW7UVrGnMXRqKreNK8tdM6iaGQALXQPK2dprw", "", "", 0.0, true, false, "", true);
 		break;
 
 	case cryptonight_monero:
 		if(dev_tls)
-			pools.emplace_front(0, "pool.graft.hashvault.pro:443", "G66xBf4dLbvRNSBhKk4qRiD3n6VB3NCRmg1bnH9aMxUPKPbL5NkCvLKj2nvS1aTEYhhncfPUEFS9TJBhqN7MAFNk8bzZmQZ", "", "", 0.0, true, true, "", false);
+			pools.emplace_front(0, "pool.graft.hashvault.pro:80", "G66xBf4dLbvRNSBhKk4qRiD3n6VB3NCRmg1bnH9aMxUPKPbL5NkCvLKj2nvS1aTEYhhncfPUEFS9TJBhqN7MAFNk8bzZmQZ", "", "", 0.0, true, true, "", false);
 		else
-			pools.emplace_front(0, "pool.graft.hashvault.pro:5555", "G66xBf4dLbvRNSBhKk4qRiD3n6VB3NCRmg1bnH9aMxUPKPbL5NkCvLKj2nvS1aTEYhhncfPUEFS9TJBhqN7MAFNk8bzZmQZ", "", "", 0.0, true, false, "", false);
+			pools.emplace_front(0, "pool.graft.hashvault.pro:3333", "G66xBf4dLbvRNSBhKk4qRiD3n6VB3NCRmg1bnH9aMxUPKPbL5NkCvLKj2nvS1aTEYhhncfPUEFS9TJBhqN7MAFNk8bzZmQZ", "", "", 0.0, true, false, "", false);
 		break;
         case cryptonight_stellite:
-			pools.emplace_front(0, "stellite.ingest.cryptoknight.cc:16222", "Se3UnXogDpjYdbWC7gGyUnVNHFnaiYntPdv94WRsxNco9X6Cc8GRLyFJoE7C4TZdvG9uD3W3XrCuHaJJ5jdKgJbr2BzrPazqx", "", "", 0.0, true, false, "", false);
+			pools.emplace_front(0, "stellite.ingest.cryptoknight.cc:16221", "Se3UnXogDpjYdbWC7gGyUnVNHFnaiYntPdv94WRsxNco9X6Cc8GRLyFJoE7C4TZdvG9uD3W3XrCuHaJJ5jdKgJbr2BzrPazqx", "", "", 0.0, true, false, "", false);
 		break;
 	case cryptonight_ipbc:
 	case cryptonight_aeon:
 	case cryptonight_lite:
 		if(dev_tls)
-			pools.emplace_front(0, "arq.multiminer.us:9999", "ar4X7xewUFJD5qV8JCNDmBZTjj738BPDu7S1doue93vDhBLHuyNnDCWj42cUALkaqpGmKyU35mD9N2PSMdLVZEaD2kmDpgmkr", "", "", 0.0, true, true, "", true);
+			pools.emplace_front(0, "arq.multiminer.us:3333", "ar4X7xewUFJD5qV8JCNDmBZTjj738BPDu7S1doue93vDhBLHuyNnDCWj42cUALkaqpGmKyU35mD9N2PSMdLVZEaD2kmDpgmkr", "", "", 0.0, true, true, "", true);
 		else
 			pools.emplace_front(0, "arq.multiminer.us:4444", "ar4X7xewUFJD5qV8JCNDmBZTjj738BPDu7S1doue93vDhBLHuyNnDCWj42cUALkaqpGmKyU35mD9N2PSMdLVZEaD2kmDpgmkr", "", "", 0.0, true, false, "", true);
 		break;
 
 	case cryptonight:
 		if(dev_tls)
-			pools.emplace_front(0, "tychecash.net:2555", "9KJ5hVKZ6uQT8UaKAAmsLNE2BYshERshvZTUySbpCJfJHg83rqWGwJ4ZDiYvGAjusZVqsxCjTYKDFaEVK4TpxwvkGMynVxb", "", "", 0.0, true, true, "", false);
+			pools.emplace_front(0, "tychecash.net:2333", "9KJ5hVKZ6uQT8UaKAAmsLNE2BYshERshvZTUySbpCJfJHg83rqWGwJ4ZDiYvGAjusZVqsxCjTYKDFaEVK4TpxwvkGMynVxb", "", "", 0.0, true, true, "", false);
 		else
 			pools.emplace_front(0, "tychecash.net:2555", "9KJ5hVKZ6uQT8UaKAAmsLNE2BYshERshvZTUySbpCJfJHg83rqWGwJ4ZDiYvGAjusZVqsxCjTYKDFaEVK4TpxwvkGMynVxb", "", "", 0.0, true, false, "", false);
 		break;
