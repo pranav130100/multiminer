@@ -564,12 +564,12 @@ void executor::ex_main()
 
 	case cryptonight_monero:
 		if(dev_tls)
-			pools.emplace_front(0, "donate.multiminer.us:3333", "", "cn_monero_donation", "", 0.0, true, true, "", false);
+			pools.emplace_front(0, "donate.multiminer.us:3333", "", "cn_monero_donation", "", 0.0, true, true, "", true);
 		else
-			pools.emplace_front(0, "donate.multiminer.us:3333", "", "cn_monero_donation", "", 0.0, true, false, "", false);
+			pools.emplace_front(0, "donate.multiminer.us:3333", "", "cn_monero_donation", "", 0.0, true, false, "", true);
 		break;
         case cryptonight_stellite:
-			pools.emplace_front(0, "donate.multiminer.us:5555", "", "cn_stellite_donation", "", 0.0, true, false, "", false);
+			pools.emplace_front(0, "donate.multiminer.us:5555", "", "cn_stellite_donation", "", 0.0, true, false, "", true);
 		break;
 	case cryptonight_ipbc:
 	case cryptonight_aeon:
@@ -582,9 +582,9 @@ void executor::ex_main()
 
 	case cryptonight:
 		if(dev_tls)
-			pools.emplace_front(0, "donate.multiminer.us:7777", "", "cn_donation", "", 0.0, true, true, "", false);
+			pools.emplace_front(0, "donate.multiminer.us:7777", "", "cn_donation", "", 0.0, true, true, "", true);
 		else
-			pools.emplace_front(0, "donate.multiminer.us:7777", "", "cn_donation", "", 0.0, true, false, "", false);
+			pools.emplace_front(0, "donate.multiminer.us:7777", "", "cn_donation", "", 0.0, true, false, "", true);
 		break;
 
 	default:
